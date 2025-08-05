@@ -13,34 +13,35 @@
 </head>
 
 <body>
-    <form class=" container p-5 border">
-        <div class="row g-3">
-            <div class="col-12 border">
+<form class=" container border">
+        <div class="row">
+            <div class="col-12 border-bottom">
                 <h1>Payment form example</h1>
             </div>
         </div>
-        <div class="row g-3">
+
+        <div class="row px-3 my-3">
             <div class=" col-12 alert alert-danger" role="alert">
                 A simple danger alert—check it out!
             </div>
         </div>
 
-        <div class="row g-3">
-            <div class="col-4">
+        <div class="row">
+            <div class="col-5">
                 <label class="forml-label">Card #</label>
                 <input type="text" class="form-control" placeholder="XXXXXXXXXX">
             </div>
-            <div class="col-2">
+            <div class="col-3">
                 <label class="forml-label">CVC #</label>
                 <input type="text" class="form-control" placeholder="0000">
             </div>
-            <div class="col-4 offset-md-2">
+            <div class="col-4">
                 <label class="forml-label">Amount</label>
                 <input type="text" class="form-control" placeholder="Amount">
             </div>
         </div>
 
-        <div class="row g-3">
+        <div class="row">
             <div class="col-6">
                 <label class="forml-label">First Name</label>
                 <input type="text" class="form-control">
@@ -51,7 +52,7 @@
             </div>
         </div>
 
-        <div class="row g-3">
+        <div class="row ">
             <div class="col-6">
                 <label class="form-label">City</label>
                 <input type="text" class="form-control">
@@ -66,43 +67,52 @@
             </div>
         </div>
         <div class="row">
-            <label class="form-label">We Accept:</label>
-            <div class="col-3 bg-secondary rounded p-1 d-flex">
-                <div class="form-check form-check-inline ">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                        value="option1">
-                    <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"
-                            style="color: #ffffff;"></i></label>
+            <col-12 class="col-md-6 ">
+                <label class="form-label">We Accept:</label>
+                <div class="col-md-5 bg-secondary rounded p-2  d-flex">
+                    <div class="form-check form-check-inline ">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"
+                                style="color: #ffffff;"></i></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"
+                                style="color: #ffffff;"></i></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option3">
+                        <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-visa"
+                                style="color: #ffffff;"></i></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                            value="option4">
+                        <label class="form-check-label" for="inlineRadio4"><i class="fa-brands fa-usps"
+                                style="color: #ffffff;"></i></label>
+                    </div>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                        value="option2">
-                    <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"
-                            style="color: #ffffff;"></i></label>
+
+            </col-12>
+            <col-12 class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label" for="floatingTextarea2">mesagge</label>
+                    <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <div class=" form-floating">
+                        <p>Add any more text here</p>
+                    </div>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                        value="option3">
-                    <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-visa"
-                            style="color: #ffffff;"></i></label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
-                        value="option4">
-                    <label class="form-check-label" for="inlineRadio4"><i class="fa-brands fa-usps"
-                            style="color: #ffffff;"></i></label>
-                </div>
-            </div>
-            
-            <div class=" col-6 offset-md-3">
-                <label class="form-label"for ="floatingTextarea2">mesagge</label>
-                <textarea class="form-control"id="floatingTextarea2"
-                    style="height: 100px"></textarea>
-            </div>
+            </col-12>
         </div>
-            <div class="border-bottom">
-                <button type="button" class="btn btn-secondary">Cancel</button>
-                <button type="button" class="btn btn-primary">Send</button>
+        <div class="row">
+            <div class="col-12 border-top d-flex justify-content-end p-3">
+                <button type="button" class="btn btn-secondary mx-2">Cancel</button>                    
+                <button type="button" class="btn btn-primary ">Send</button>
+        
+            </div>
         </div>
     </form>
 </body>
